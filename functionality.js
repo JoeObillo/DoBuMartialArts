@@ -8,7 +8,8 @@ function toggleText(policyname) {
       }
 
 function validateForm(){
-  var name = document.forms.form.name.value;
+
+    var name = document.forms.form.name.value;
     var email = document.forms.form.email.value;
     var password = document.forms.form.pwd.value;
 
@@ -34,4 +35,6 @@ function validateForm(){
         alert("Password should be atleast 6 character long");
         return false;
     }
+
+    return alert ("Success");
 }
