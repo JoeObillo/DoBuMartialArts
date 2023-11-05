@@ -1,0 +1,89 @@
+* { /* global */
+    margin: 0;
+    padding: 0;
+    font-family: 'Julius Sans One', sans-serif;
+}
+body {
+    background-color: #262121;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a :link {
+    text-decoration: none;
+}
+a :visited {
+    text-decoration: none;
+}
+a :hover {
+    text-decoration: none;
+}
+a :active {
+    text-decoration: none;
+}
+.container { /* HEADER */
+    display: flex;
+    justify-content: space-between;
+}
+.container-1 {
+    display: none;
+}
+.container, .container-1 {
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #262121;
+}
+.div-nav-words :hover{
+    color: #d49100;
+}
+#btn {
+    display: none;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+.div-nav-words-2 {
+    display: none;
+}
+.logo {
+    background-image: url(pictures/DOBU.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 50px;
+}
+.nav-words {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+}
+.div-nav-words {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: none;
+    }
+    .container-1 {
+        width: 768px 100%;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-1-1 {
+        display: block;
+    }
+    .div-nav-words {
+        display: none;
+    }
+    .nav-words {
+        font-size: 25px;
+    }
+    #btn {
+        display: block;
+    }
+}

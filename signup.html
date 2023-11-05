@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" type="image/png" href="logo/DOBU.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <header id="header-place">
+    </header>
+
+    <main>
+      <section>
+
+        <div class="section-6">
+
+          <div class="signup-pic"></div>
+
+          <div class="signup">
+
+            <div  id="signup-header"> <h3> Discover your inner strength and confidence. Join us! </h3></div>
+
+            <form class="signup-inputs" name="form" onsubmit="return validateForm()" method="post">
+              <label for="inputs-3">Name:</label>
+              <br>
+              <input type="text" id="inputs-3" name="name" required>
+              <br>
+              <br>
+              <label for="inputs-4">Email Address:</label>
+              <br>
+              <input type="text" id="inputs-4" name="email" required>
+              <br>
+              <br>
+              <label for="inputs-5">Password:</label>
+              <br>
+              <input type="password" id="inputs-5" name="pwd" required>
+              <br>
+              <br>
+              <label for="membership-dropdown">Pick a Membership:</label>
+
+                <select name="membership-dropdown" id="membership-dropdown" required>
+                <option value="basic">Basic</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+                <option value="elite">Elite</option>
+                <option value="private">Private Martial Arts</option>
+                <option value="junioe">Junior Membership</option>
+                </select>
+
+              <br>
+              <br>
+              <br>
+              <button type="submit" value="send" id="signup-btn"> Sign Up </button>
+              <p class="redirect"> <a href="login.html"> Already have an account? Log in here. </a> </p>
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+    
+    <script>
+      $( document ).ready(function() {
+        $('#header-place').load('header.html');
+      })
+    </script>
+    <script src="functionality.js"></script>
+</body>
+</html>

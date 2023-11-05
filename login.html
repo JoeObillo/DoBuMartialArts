@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Log-In</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" type="image/png" href="logo/DOBU.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <header id="header-place">
+    </header>
+
+    <main>
+      <section>
+
+        <div class="section-6">
+
+          <div class="signup-pic">
+          </div>
+
+          <div class="signup">
+
+            <div  id="signup-header"> <h3> Welcome Back, Warrior! </h3></div>
+
+            <form class="signup-inputs" name="form" onsubmit="return validateForm()" method="post">
+              <label for="inputs-1">Email Address:</label>
+              <br>
+              <input type="text" id="inputs-1" name="email" required>
+              <br>
+              <br>
+              <label for="inputs-2">Password:</label>
+              <br>
+              <input type="password" id="inputs-2" name="pwd" required>
+              <br>
+              <br>
+              <br>
+              <button type="submit" value="send" id="signup-btn"> Log In </button>
+              <p class="redirect"> <a href="signup.html"> Don't Have an Account? Join us here. </a> </p>
+            </form>
+
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+    
+    <script>
+      $( document ).ready(function() {
+        $('#header-place').load('header.html');
+      })
+    </script>
+    <script src="functionality.js"></script>
+</body>
+</html>
